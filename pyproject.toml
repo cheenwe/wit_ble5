@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wit-ble5"
+version = "0.1.0"
+description = "Cross-platform BLE client for WitMotion BLE 5.0 sensors (WT9011DCL-BT50 / WT901BLE)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "xinwei" }]
+keywords = ["witmotion", "ble", "imu", "wt9011dcl", "bluetooth"]
+dependencies = [
+  "bleak>=0.22.0",
+  "PySide6-Essentials>=6.6.0",
+  "pyqtgraph>=0.13.3",
+  "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+wit-ble5 = "wit_ble5.cli:main"
+wit-ble5-gui = "wit_ble5.gui.app:main"
+
+[tool.setuptools.packages.find]
+include = ["wit_ble5*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

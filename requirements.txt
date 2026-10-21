@@ -1,0 +1,4 @@
+bleak>=0.22.0
+PySide6-Essentials>=6.6.0
+pyqtgraph>=0.13.3
+numpy>=1.26.0
