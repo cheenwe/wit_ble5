@@ -1,0 +1,50 @@
+name: Bug report
+description: Report something that does not work
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve wit-ble5. Hardware-related bugs need sensor model + OS details.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Expected vs actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: macOS 15 / Ubuntu 24.04
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: 3.12.x
+    validations:
+      required: true
+  - type: input
+    id: sensor
+    attributes:
+      label: Sensor model (if applicable)
+      placeholder: WT9011DCL-BT50
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Output of `wit-ble5 scan` / `connect`, or GUI footer errors
+      render: text

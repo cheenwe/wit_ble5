@@ -12,7 +12,7 @@ from typing import Any
 
 from . import __version__
 from .client import WitBleClient, scan_devices
-from .protocol import ImuSample, RegisterPacket, RATE_CODES
+from .protocol import RATE_CODES, ImuSample, RegisterPacket
 
 
 def _build_parser() -> argparse.ArgumentParser:

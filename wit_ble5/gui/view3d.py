@@ -5,8 +5,8 @@ from __future__ import annotations
 import math
 
 import numpy as np
-from PySide6.QtCore import Qt, QPointF
-from PySide6.QtGui import QColor, QPainter, QPen, QFont
+from PySide6.QtCore import QPointF, Qt
+from PySide6.QtGui import QColor, QFont, QPainter, QPen
 from PySide6.QtWidgets import QWidget
 
 from .app_theme import ACCENT, BORDER, MUTED, PANEL_ALT, TEXT

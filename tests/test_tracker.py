@@ -1,7 +1,6 @@
 import math
 
 import numpy as np
-
 from wit_ble5.gui.tracker import TrajectoryTracker, rotation_body_to_world
 from wit_ble5.protocol import ImuSample
 
