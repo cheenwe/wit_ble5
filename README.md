@@ -1,6 +1,6 @@
 # wit-ble5
 
-[![CI](https://github.com/OWNER/wit_ble5/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/wit_ble5/actions/workflows/ci.yml)
+[![CI](https://github.com/cheenwe/wit_ble5/actions/workflows/ci.yml/badge.svg)](https://github.com/cheenwe/wit_ble5/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
@@ -31,7 +31,7 @@ Compatible modules (same BLE 5.0 GATT / frame format): `WT9011DCL-BT50`, `WT901B
 ## Install
 
 ```bash
-git clone https://github.com/OWNER/wit_ble5.git
+git clone https://github.com/cheenwe/wit_ble5.git
 cd wit_ble5
 python3 -m venv .venv
 source .venv/bin/activate
